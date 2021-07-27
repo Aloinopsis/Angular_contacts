@@ -1,0 +1,9 @@
+{
+    "name": "darek/app-contacts",
+    "autoload": {
+        "psr-4": {
+            "Darek\\AppContacts\\": "src/"
+        }
+    },
+    "require": {}
+}

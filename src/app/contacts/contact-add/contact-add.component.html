@@ -1,0 +1,36 @@
+<app-header>
+    <p content>Dodawanie nowego kontaktu</p>
+</app-header>
+
+<form [formGroup]="contactForm">
+    <div class="row form-group">
+
+        <div class="col-sm-12 col-xl-4">
+            <label>Nazwisko</label>
+            <input formControlName="surname" class="form-control" placeholder="Nazwisko" autofocus>
+        </div>
+
+
+        <div class="col-sm-12 col-xl-4">
+            <label>Imię</label>
+            <input formControlName="firstName" class="form-control" placeholder="Imię" autofocus>
+        </div>
+
+        <div class="col-sm-12 col-xl-4">
+            <label>Telefon kontaktowy</label>
+            <input formControlName="phoneNumber" class="form-control" placeholder="Telefon" autofocus>
+        </div>
+
+              <div class="col-sm-12">
+            <button [routerLink]="['/contacts']" class="btn btm-sm btn-dark">Wstecz</button>
+            <button (click)="contactForm.reset()" class="btn btm-sm btn-danger">Reset</button>
+            <button (click)="addContact()" [disabled]="contactForm.invalid" class="btn btm-sm btn-info">Zapisz</button>
+
+        </div>
+
+    </div>
+</form>
+
+<!-- <pre>{{ contactForm.value | json }}</pre> -->
+<!-- <pre>{{contactForm.status | json}}</pre> -->
+<!-- <pre>{{contactForm.invalid | json}}</pre> -->
