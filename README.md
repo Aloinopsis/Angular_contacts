@@ -1,7 +1,7 @@
 1. git clone
 2. CMD -> npm install
 3. CMD -> ng s -o
-Done
+4. Done
 
 
 # AppContacts
