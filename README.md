@@ -1,3 +1,9 @@
+1. git clone
+2. CMD -> npm install
+3. CMD -> ng s -o
+Done
+
+
 # AppContacts
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.1.
